@@ -24,13 +24,13 @@ public class Parcial {
 		}
 		String raiz = "";
 		if (discr == 0) {
-			int raizInt = -b/(2*a);
+			double raizInt = -b/(2*a);
 			raiz += raizInt;
 		}
 		
 		else {
-			int raiz1 = -b + discr / (2*a);
-			int raiz2 = -b - discr / (2*a);
+			double raiz1 = (-b + Math.sqrt(discr)) / (2 * a);
+			double raiz2 = (-b - Math.sqrt(discr)) / (2 * a);
 			raiz += raiz1 + ", " + raiz2; 
 		}
 		

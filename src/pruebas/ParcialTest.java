@@ -25,7 +25,7 @@ class ParcialTest {
 	@Test
 	public void casoDosRaicesReales() {
 			try {
-				assertEquals("5, 5", this.parcial.calcularRaices(1, -5, 6));
+				assertEquals("3.0, 2.0", this.parcial.calcularRaices(1, -5, 6));
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
