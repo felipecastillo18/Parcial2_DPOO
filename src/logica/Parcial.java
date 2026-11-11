@@ -12,12 +12,12 @@ public class Parcial {
 		this.c = c;
 	}
 	
-	public String calcularRaices() throws Exception {
+	public String calcularRaices(int a, int b, int c) throws Exception {
 		if (a == 0) {
 			throw new Exception ("No se puede ejecutar la solucion");
 		}
 		
-		int discr = (int) Math.pow(b, 2) - 4*a*c;
+		int discr = ((int) Math.pow(b, 2)) - 4*a*c;
 		
 		if (discr < 0) {
 			throw new Exception ("Las raices son complejas");
@@ -36,6 +36,30 @@ public class Parcial {
 		
 		return raiz;
 		 
+	}
+
+	public int getA() {
+		return a;
+	}
+
+	public void setA(int a) {
+		this.a = a;
+	}
+
+	public int getB() {
+		return b;
+	}
+
+	public void setB(int b) {
+		this.b = b;
+	}
+
+	public int getC() {
+		return c;
+	}
+
+	public void setC(int c) {
+		this.c = c;
 	}
 
 }
